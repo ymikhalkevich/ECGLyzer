@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91046A3221EF9AB00A7B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91046A2221EF9AB00A7B61A /* AppDelegate.swift */; };
+		A91046A5221EF9AB00A7B61A /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91046A4221EF9AB00A7B61A /* ScanTableViewController.swift */; };
+		A91046A8221EF9AB00A7B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91046A6221EF9AB00A7B61A /* Main.storyboard */; };
+		A91046AB221EF9AB00A7B61A /* BleTerminal1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A91046A9221EF9AB00A7B61A /* BleTerminal1.xcdatamodeld */; };
+		A91046AD221EF9AC00A7B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91046AC221EF9AC00A7B61A /* Assets.xcassets */; };
+		A91046B0221EF9AC00A7B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91046AE221EF9AC00A7B61A /* LaunchScreen.storyboard */; };
+		A91046B8221EFA8A00A7B61A /* BLE_iOS_SDK in Resources */ = {isa = PBXBuildFile; fileRef = A91046B7221EFA8A00A7B61A /* BLE_iOS_SDK */; };
+		A91046BD221EFB3300A7B61A /* BLEDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91046BC221EFB3300A7B61A /* BLEDataSource.swift */; };
+		A91046C0221F0C5300A7B61A /* libWearHeartFunction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A91046BF221F0C5300A7B61A /* libWearHeartFunction.a */; };
+		A99A2BE1229D557800379E79 /* ECGlyzer-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = A91046BA221EFB0200A7B61A /* ECGlyzer-Bridging-Header.m */; };
+		A99A2BE3229D559C00379E79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99A2BE2229D559C00379E79 /* ChartView.swift */; };
+		A99C57BD229ECBC10062B58A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99C57BA229ECB030062B58A /* Charts.framework */; };
+		A99C57BE229ECBC10062B58A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A99C57BA229ECB030062B58A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A99C57C5229ECD4B0062B58A /* Source in Resources */ = {isa = PBXBuildFile; fileRef = A99C57C3229ECD4B0062B58A /* Source */; };
+		A9FC29F4222405FB00C04BBD /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC29F3222405FB00C04BBD /* UIViewControllerExt.swift */; };
+		A9FC29F622283D7D00C04BBD /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC29F522283D7D00C04BBD /* ChartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A99C57B9229ECB030062B58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99C57B4229ECB020062B58A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		A99C57BB229ECB030062B58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99C57B4229ECB020062B58A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		A99C57BF229ECBC10062B58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99C57B4229ECB020062B58A /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A99C57C1229ECBC10062B58A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A99C57BE229ECBC10062B58A /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A910469F221EF9AB00A7B61A /* ECGlyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECGlyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91046A2221EF9AB00A7B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A91046A4221EF9AB00A7B61A /* ScanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
+		A91046A7221EF9AB00A7B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A91046AA221EF9AB00A7B61A /* BleTerminal1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BleTerminal1.xcdatamodel; sourceTree = "<group>"; };
+		A91046AC221EF9AC00A7B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91046AF221EF9AC00A7B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A91046B1221EF9AC00A7B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91046B7221EFA8A00A7B61A /* BLE_iOS_SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BLE_iOS_SDK; sourceTree = "<group>"; };
+		A91046B9221EFB0100A7B61A /* ECGlyzer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECGlyzer-Bridging-Header.h"; sourceTree = "<group>"; };
+		A91046BA221EFB0200A7B61A /* ECGlyzer-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ECGlyzer-Bridging-Header.m"; sourceTree = "<group>"; };
+		A91046BC221EFB3300A7B61A /* BLEDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDataSource.swift; sourceTree = "<group>"; };
+		A91046BF221F0C5300A7B61A /* libWearHeartFunction.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWearHeartFunction.a; path = BleTerminal1/BLE_iOS_SDK/libWearHeartFunction.a; sourceTree = "<group>"; };
+		A99A2BE2229D559C00379E79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		A99C57B4229ECB020062B58A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
+		A99C57C3229ECD4B0062B58A /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
+		A9FC29F3222405FB00C04BBD /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		A9FC29F522283D7D00C04BBD /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A910469C221EF9AB00A7B61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91046C0221F0C5300A7B61A /* libWearHeartFunction.a in Frameworks */,
+				A99C57BD229ECBC10062B58A /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9104696221EF9AB00A7B61A = {
+			isa = PBXGroup;
+			children = (
+				A91046A1221EF9AB00A7B61A /* ECGlyzer */,
+				A91046A0221EF9AB00A7B61A /* Products */,
+				A91046BE221F0C5300A7B61A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A91046A0221EF9AB00A7B61A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A910469F221EF9AB00A7B61A /* ECGlyzer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91046A1221EF9AB00A7B61A /* ECGlyzer */ = {
+			isa = PBXGroup;
+			children = (
+				A99C57C3229ECD4B0062B58A /* Source */,
+				A99C57B4229ECB020062B58A /* Charts.xcodeproj */,
+				A91046A4221EF9AB00A7B61A /* ScanTableViewController.swift */,
+				A9FC29F522283D7D00C04BBD /* ChartViewController.swift */,
+				A99A2BE2229D559C00379E79 /* ChartView.swift */,
+				A91046BC221EFB3300A7B61A /* BLEDataSource.swift */,
+				A99A2BE0229D53C200379E79 /* View */,
+				A91046B7221EFA8A00A7B61A /* BLE_iOS_SDK */,
+				A99A2BDF229D53A200379E79 /* Support */,
+				A9FC29F2222405C800C04BBD /* Exrentions */,
+			);
+			path = ECGlyzer;
+			sourceTree = "<group>";
+		};
+		A91046BE221F0C5300A7B61A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A91046BF221F0C5300A7B61A /* libWearHeartFunction.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A99A2BDF229D53A200379E79 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A91046A2221EF9AB00A7B61A /* AppDelegate.swift */,
+				A91046B9221EFB0100A7B61A /* ECGlyzer-Bridging-Header.h */,
+				A91046BA221EFB0200A7B61A /* ECGlyzer-Bridging-Header.m */,
+				A91046AE221EF9AC00A7B61A /* LaunchScreen.storyboard */,
+				A91046B1221EF9AC00A7B61A /* Info.plist */,
+				A91046AC221EF9AC00A7B61A /* Assets.xcassets */,
+				A91046A9221EF9AB00A7B61A /* BleTerminal1.xcdatamodeld */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A99A2BE0229D53C200379E79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A91046A6221EF9AB00A7B61A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A99C57B5229ECB020062B58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99C57BA229ECB030062B58A /* Charts.framework */,
+				A99C57BC229ECB030062B58A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9FC29F2222405C800C04BBD /* Exrentions */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC29F3222405FB00C04BBD /* UIViewControllerExt.swift */,
+			);
+			path = Exrentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A910469E221EF9AB00A7B61A /* ECGlyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91046B4221EF9AC00A7B61A /* Build configuration list for PBXNativeTarget "ECGlyzer" */;
+			buildPhases = (
+				A910469B221EF9AB00A7B61A /* Sources */,
+				A910469C221EF9AB00A7B61A /* Frameworks */,
+				A910469D221EF9AB00A7B61A /* Resources */,
+				A99C57C1229ECBC10062B58A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A99C57C0229ECBC10062B58A /* PBXTargetDependency */,
+			);
+			name = ECGlyzer;
+			productName = BleTerminal1;
+			productReference = A910469F221EF9AB00A7B61A /* ECGlyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9104697221EF9AB00A7B61A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yury Mikhalkevich";
+				TargetAttributes = {
+					A910469E221EF9AB00A7B61A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A910469A221EF9AB00A7B61A /* Build configuration list for PBXProject "ECGlyzer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9104696221EF9AB00A7B61A;
+			productRefGroup = A91046A0221EF9AB00A7B61A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A99C57B5229ECB020062B58A /* Products */;
+					ProjectRef = A99C57B4229ECB020062B58A /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A910469E221EF9AB00A7B61A /* ECGlyzer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A99C57BA229ECB030062B58A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A99C57B9229ECB030062B58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A99C57BC229ECB030062B58A /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A99C57BB229ECB030062B58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A910469D221EF9AB00A7B61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91046B0221EF9AC00A7B61A /* LaunchScreen.storyboard in Resources */,
+				A91046B8221EFA8A00A7B61A /* BLE_iOS_SDK in Resources */,
+				A91046AD221EF9AC00A7B61A /* Assets.xcassets in Resources */,
+				A99C57C5229ECD4B0062B58A /* Source in Resources */,
+				A91046A8221EF9AB00A7B61A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A910469B221EF9AB00A7B61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FC29F4222405FB00C04BBD /* UIViewControllerExt.swift in Sources */,
+				A9FC29F622283D7D00C04BBD /* ChartViewController.swift in Sources */,
+				A99A2BE1229D557800379E79 /* ECGlyzer-Bridging-Header.m in Sources */,
+				A91046AB221EF9AB00A7B61A /* BleTerminal1.xcdatamodeld in Sources */,
+				A91046A5221EF9AB00A7B61A /* ScanTableViewController.swift in Sources */,
+				A91046BD221EFB3300A7B61A /* BLEDataSource.swift in Sources */,
+				A91046A3221EF9AB00A7B61A /* AppDelegate.swift in Sources */,
+				A99A2BE3229D559C00379E79 /* ChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A99C57C0229ECBC10062B58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = A99C57BF229ECBC10062B58A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A91046A6221EF9AB00A7B61A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91046A7221EF9AB00A7B61A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A91046AE221EF9AC00A7B61A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91046AF221EF9AC00A7B61A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91046B2221EF9AC00A7B61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A91046B3221EF9AC00A7B61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91046B5221EF9AC00A7B61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP7RE9548Y;
+				INFOPLIST_FILE = "$(SRCROOT)/ECGlyzer/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ECGlyzer/BLE_iOS_SDK",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Lab.BleTerminal1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECGlyzer/Support/ECGlyzer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64 arm64e";
+			};
+			name = Debug;
+		};
+		A91046B6221EF9AC00A7B61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP7RE9548Y;
+				INFOPLIST_FILE = "$(SRCROOT)/ECGlyzer/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ECGlyzer/BLE_iOS_SDK",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Lab.BleTerminal1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECGlyzer/Support/ECGlyzer-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64 arm64e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A910469A221EF9AB00A7B61A /* Build configuration list for PBXProject "ECGlyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91046B2221EF9AC00A7B61A /* Debug */,
+				A91046B3221EF9AC00A7B61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91046B4221EF9AC00A7B61A /* Build configuration list for PBXNativeTarget "ECGlyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91046B5221EF9AC00A7B61A /* Debug */,
+				A91046B6221EF9AC00A7B61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A91046A9221EF9AB00A7B61A /* BleTerminal1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A91046AA221EF9AB00A7B61A /* BleTerminal1.xcdatamodel */,
+			);
+			currentVersion = A91046AA221EF9AB00A7B61A /* BleTerminal1.xcdatamodel */;
+			path = BleTerminal1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9104697221EF9AB00A7B61A /* Project object */;
+}
